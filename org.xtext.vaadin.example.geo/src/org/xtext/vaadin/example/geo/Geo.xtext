@@ -1,0 +1,29 @@
+grammar org.xtext.vaadin.example.geo.GeoDsl with org.eclipse.xtext.xbase.annotations.XbaseWithAnnotations
+
+import "http://example.vaadin.xtext.org/geo/GeoDsl" 
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+GeoModel:
+	'package' packageName=QualifiedName
+	'port' port=INT
+	'name' name=ID
+	('theme' theme = GeoTheme)?
+	(hasStyle?='style' style=STRING)?
+	(
+		(pwa?='progressiveWebApp')? & 
+		(hasLongName?='description' longName=STRING)?
+	)
+	(layout=GeoLayout)?; 
+
+GeoLayout:
+	{GeoLayout} 'layout' name=ID (hasLogo?='logo' logoPath=STRING)?
+	'{' tabs += GeoTab* '}';
+
+GeoTab:
+	'tab' name=ID
+	'icon' iconName=STRING
+	(hasTopology?='topology' topology=STRING)?;
+	
+enum GeoTheme:
+	LUMO = "Lumo" | MATERIAL = "Material";
+

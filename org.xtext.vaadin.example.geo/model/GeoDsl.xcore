@@ -1,0 +1,44 @@
+@GenModel(fileExtensions="geo")
+@GenModel(modelName="GeoDSL")
+@GenModel(prefix="GeoDSL")
+@GenModel(updateClasspath="false")
+@GenModel(loadInitialization="false")
+@GenModel(literalsInterface="true")
+@Ecore(nsURI="http://example.vaadin.xtext.org/geo/GeoDsl")
+@Ecore(nsPrefix="geodsl")
+
+package org.xtext.vaadin.example.geo
+
+import GenModel
+
+class GeoModel {
+	String packageName
+	int port
+	boolean pwa
+	String name
+	boolean hasLongName
+	String longName
+	GeoTheme theme
+	boolean hasStyle
+	String style
+	contains GeoLayout layout
+}
+
+class GeoLayout {
+	String name
+	boolean hasLogo
+	String logoPath
+	contains GeoTab[] tabs
+}
+
+class GeoTab {
+	String name
+	String iconName
+	boolean hasTopology
+	String topology
+}
+
+enum GeoTheme {
+	LUMO as "Lumo"
+	MATERIAL as "Material"
+}

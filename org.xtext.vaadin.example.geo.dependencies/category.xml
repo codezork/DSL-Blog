@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.xtext.vaadin.example.geo.dependencies.feature" version="0.0.0">
+      <category name="dependencies"/>
+   </feature>
+   <feature id="org.xtext.vaadin.example.geo.dependencies.feature.source" version="0.0.0">
+      <category name="dependencies.source"/>
+   </feature>
+   <category-def name="dependencies" label="Geo Dependencies"/>
+   <category-def name="dependencies.source" label="Geo Dependencies (Sources)"/>
+</site>

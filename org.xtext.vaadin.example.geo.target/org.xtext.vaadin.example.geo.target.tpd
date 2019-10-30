@@ -1,0 +1,99 @@
+target "Geo Target platform"
+
+with source allEnvironments
+location "https://download.eclipse.org/releases/2019-09" {
+	org.eclipse.jdt.feature.group
+	org.eclipse.pde.feature.group
+	org.eclipse.emf.sdk.feature.group
+	org.eclipse.equinox.sdk.feature.group
+	org.eclipse.e4.core.tools.feature.source.feature.group
+	org.eclipse.collections.feature.source.feature.group
+	org.eclipse.sdk.feature.group
+	org.eclipse.swt.win32.win32.x86_64
+	org.eclipse.emf.mwe.sdk.feature.group
+	org.eclipse.emf.mwe2.language.sdk.feature.group
+	org.eclipse.emf.mwe2.runtime.sdk.feature.group
+	org.eclipse.emf.mwe2.launcher.feature.group
+	org.eclipse.emf.mwe.core.feature.feature.group
+	org.eclipse.m2e.feature.feature.group
+	org.eclipse.m2e.logback.feature.feature.group
+	org.eclipse.m2e.sdk.feature.feature.group
+	org.eclipse.wst.common_core.feature.feature.group
+	org.eclipse.wst.common_ui.feature.feature.group
+	org.eclipse.wst.web_core.feature.feature.group
+	org.eclipse.wst.ws_core.feature.feature.group
+	org.eclipse.wst.xml_core.feature.feature.group
+	org.eclipse.equinox.core.feature.feature.group
+	org.eclipse.equinox.p2.core.feature.feature.group
+	org.eclipse.equinox.p2.discovery.feature.feature.group
+	org.eclipse.ecf.core.feature.feature.group
+	org.eclipse.ecf.filetransfer.feature.feature.group
+	org.eclipse.wst.xml_ui.feature.feature.group
+	org.eclipse.wst.common.fproj.feature.group
+	org.eclipse.wst.json_core.feature.feature.group
+	org.eclipse.wst.server_adapters.feature.feature.group
+	org.eclipse.wst.server_core.feature.feature.group
+	org.eclipse.wst.server_ui.feature.feature.group
+	org.eclipse.wst.server_userdoc.feature.feature.group
+	org.eclipse.wst.ws_userdoc.feature.feature.group
+}
+location "https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.19.0" {
+	org.eclipse.xtext.sdk.feature.group
+	com.google.guava
+	io.github.classgraph
+	org.eclipse.xtend.sdk.feature.group
+	org.eclipse.xtext.docs.feature.group
+	org.eclipse.xtext.examples.feature.group
+	org.eclipse.xtext.redist.feature.group
+	org.eclipse.xtext.runtime.feature.group
+	org.eclipse.xtext.ui.feature.group
+	org.eclipse.xtext.xbase.feature.group
+	org.eclipse.xtext.xbase.lib.feature.group
+	org.eclipse.xtext.xtext.ui.feature.group
+	org.eclipse.xtext.xtext.ui.graph.feature.group
+	org.junit
+	org.objectweb.asm
+	org.objectweb.asm.tree
+}
+location "https://download.eclipse.org/modeling/emf/emf/builds/release/2.18" {
+	org.eclipse.emf.ecore.xcore.feature.group
+	org.eclipse.emf.ecore.xcore.sdk.feature.group
+	org.eclipse.emf.ecore.xcore.ui.feature.group
+}
+location "https://download.eclipse.org/tools/orbit/downloads/2019-09" {
+	com.ibm.icu
+	javax.activation
+	javax.mail
+	javax.persistence
+	org.apache.commons.beanutils
+	org.apache.commons.cli
+	org.apache.commons.codec
+	org.apache.commons.collections
+	org.apache.commons.httpclient
+	org.apache.commons.lang
+	org.apache.commons.lang3
+	org.apache.commons.logging
+	org.apache.commons.math
+	org.apache.commons.net
+	org.apache.commons.pool
+	org.apache.httpcomponents.httpclient
+	org.apache.httpcomponents.httpcore
+	org.apache.httpcomponents.httpcore.nio
+	org.apache.log4j
+	com.google.inject
+	javax.websocket
+	javax.transaction
+	ch.qos.logback.classic
+	ch.qos.logback.core
+	ch.qos.logback.slf4j
+	com.google.gson
+}
+location "http://localhost:9999/dependencies/" {
+//	org.xtext.vaadin.example.geo.dependencies.feature
+}
+location "http://ianbrandt.github.io/m2e-maven-dependency-plugin/" {
+	com.ianbrandt.tools.m2e.mdp.feature.feature.group
+}
+location "http://download.eclipse.org/nebula/releases/latest" {
+	org.eclipse.nebula.widgets.tablecombo
+}
